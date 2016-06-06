@@ -1,0 +1,131 @@
+body
+{
+  margin:0;
+  padding:0;
+  font-family: 'apercu_mono_pro';
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased!important;
+  text-rendering: optimizeLegibility!important;
+  -moz-osx-font-smoothing: grayscale;
+  .fadingBody;
+}
+
+.wrapper
+{
+	margin: 0 auto;
+	max-width: 1024px;
+	margin-top: 64px;
+}
+
+nav
+{
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 999;
+	background: rgba(255,255,255,0);
+	border-bottom: 2px solid rgba(0,32,255,0);
+	.fadingLinks;
+	
+	ul
+	{
+		margin: 0 auto;
+		max-width: 1024px;
+		list-style: none;
+		
+		li
+		{
+			float: left;
+			width: 33.33333333%;
+			color: white;
+			text-align: center;
+			line-height: 1.5em;
+			cursor: pointer;
+			padding: 32px 0px;
+			.fadingLinks;
+			
+			&:hover
+			{
+				opacity: .7;
+			}
+		}
+	}
+}
+
+section
+{
+	float: left;
+	width: 100%;
+	
+	
+		
+	.sectionIndicator
+	{
+		position: absolute;
+		top: -34px;
+		width: 360px;
+		padding-bottom: 264px;
+		border: 2px solid rgba(0,32,255,1);
+		//background: url(../img/bgk-chapters.png) center center no-repeat;
+		//background-size: 360px 360px;
+		
+		span
+		{
+			float: left;
+			padding: 32px;
+			color: @deepblue;
+			font-size: 1.125em;
+			line-height: 1.8em !important;
+		}
+	}
+	
+	ul
+	{
+		list-style: disc;
+		list-style-position: outside;
+		margin-left: 16px;
+		
+		li
+		{
+			
+			float: left;
+			width: 100%;
+			font-size: 1.125em;
+			line-height: 1.8em;
+			margin-bottom: 1.8em;
+		}
+	}
+}
+
+.toSlideIn
+{
+	transform: translateY(90px);
+	.slideIn;
+}
+
+.come-in
+{
+	transform: translateY(0px);
+}
+
+.already-visible {
+  transform: translateY(0px);
+  animation: none;
+}
+
+.changeColorNav
+{
+	color: @deepblue;
+}
+
+.showNavBgk
+{
+	background: rgba(255,255,255,1);
+	border-bottom: 2px solid rgba(0,32,255,1);
+}
+
+.swapBodyColor
+{
+	background: #f1f1f1;
+}
