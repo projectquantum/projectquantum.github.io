@@ -51,6 +51,30 @@ nav
 			}
 		}
 	}
+
+	ol
+	{
+		margin: 0 auto;
+		max-width: 1024px;
+		list-style: decimal;
+		
+		li
+		{
+			float: left;
+			width: 33.33333333%;
+			color: white;
+			text-align: center;
+			line-height: 1.5em;
+			cursor: pointer;
+			padding: 32px 0px;
+			.fadingLinks;
+			
+			&:hover
+			{
+				opacity: .7;
+			}
+		}
+	}
 }
 
 section
@@ -83,6 +107,23 @@ section
 	ul
 	{
 		list-style: disc;
+		list-style-position: outside;
+		margin-left: 16px;
+		
+		li
+		{
+			
+			float: left;
+			width: 100%;
+			font-size: 1.125em;
+			line-height: 1.8em;
+			margin-bottom: 1.8em;
+		}
+	}
+
+		ol
+	{
+		list-style: decimal;
 		list-style-position: outside;
 		margin-left: 16px;
 		
