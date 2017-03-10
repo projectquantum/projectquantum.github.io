@@ -11,18 +11,23 @@
 	<!--<script src="js/less.js"></script>-->
 	<script src="js/pq.js"></script>
 	<script src="js/comein.js"></script>
+<<<<<<< HEAD
 
   <meta http-equiv="refresh" content="0; url=http://community.computingatschool.org.uk/resources/4382" />
 
+=======
+  <!--script for scrolling-->
+  <script src="js/scroll.js"></script>
+>>>>>>> origin/master
 </head>
 
 <body>
 
 <nav>
 	<ul>
-		<li>1<br>The Project</li>
-		<li>2<br>Team</li>
-		<li>3<br>Get involved</li>
+		<li id="button1">1<br>The Project</a></li>
+		<li id="button2">2<br>Team</a></li>
+		<li id="button3">3<br>Get involved</a></li>
 	</ul>
 </nav>
 
@@ -181,10 +186,9 @@
 
 <section>
 	<div class="wrapper out-margins">
-		
 		<div class="row toSlideIn">
 			<div class="col3 gutter">
-				<div class="sectionIndicator"><span>Full description</span></div>
+				<div id="the-project" class="sectionIndicator"><span>The Project</span></div>
 			</div>
 			
 			<div class="col8 gutter">
@@ -217,9 +221,17 @@
 		</div>
 		
 		<div class="row toSlideIn">
-			<div class="col3 gutter hider"></div>
+			<div class="col3 gutter">
+        				<div id="the-team" class="sectionIndicator"><span>The Team</span></div>
+      </div>
 			<div class="col8 gutter">
-				<p>Quality is key. How do we know that the questions in the system are any good? The exciting thing about Quantum is that it’s a collaboration between leading experts in assessment (Cambridge Assessment, Durham Centre for Evaluation and Monitoring) and subject experts (CAS, Naace), plus our technology partner Diagnostic Questions. CEM has lots of ideas for how to use data from thousands of students taking thousands of questions to identify which questions work well and which do not. There are serious research questions here – no one has done this before – but no one is better placed to do this than CEM and CA.</p>
+        <img style="border-radius: 50%" src="img/simon-woodhead.jpg">
+        <img style="border-radius: 50%" src="img/simon-peyton-jones.jpg">
+        <img style="border-radius: 50%" src="img/tim-oates.jpg">
+        <img style="border-radius: 50%" src="img/rob-coe.jpg">
+		  	<p>(In order: Simon Woodhead, Simon Peyton-Jones, Tim Oates, Rob Coe)</p>
+
+    		<p>Quality is key. How do we know that the questions in the system are any good? The exciting thing about Quantum is that it’s a collaboration between leading experts in assessment (Cambridge Assessment, Durham Centre for Evaluation and Monitoring) and subject experts (CAS, Naace), plus our technology partner Diagnostic Questions. CEM has lots of ideas for how to use data from thousands of students taking thousands of questions to identify which questions work well and which do not. There are serious research questions here – no one has done this before – but no one is better placed to do this than CEM and CA.</p>
 				
 				<p>On the CAS end, our content advisory group consists of</p>
 				
@@ -235,25 +247,35 @@
 				
 			</div>
 		</div>
-
-		<div class="row toSlideIn">
+		
+    		<div class="row toSlideIn">
 			<div class="col3 gutter">
-				<div class="sectionIndicator"><span>Useful links</span></div>
+				<div id="get-involved" class="sectionIndicator"><span>Get Involved</span></div>
 			</div>
 			
 			<div class="col8 gutter">
+				<p>Project Quantum is a crowd-sourced project and you can get involved today. To contribute to the question bank, all you need to do is:</p>
+					
+				<ol>
+					<li>Head over to <a href="https://diagnosticquestions.com/">Diagnostic Questions</a></li>
+										
+					<li>Sign up for a free account.</li>
+					
+					<li>Start uploading questions.</li>
+					
+				</ol>
+				
+        <p>It's that simple!</p>
+        <br>
+        <br>
+        <br>
+        <p class="evidences"><span>Useful links</span></p>
 				<ul>
 					<li><a href="#">Guidance about writing good multiple choice questions</a></li>
 				</ul>
-			</div>
-		</div>
-		
-		<div class="row toSlideIn">
-			<div class="col3 gutter">
-				<div class="sectionIndicator"><span>Other relevant<br>assessment projects</span></div>
-			</div>
+        
+				<p class="evidences"><span>Other relevant<br>assessment projects</span></p>
 			
-			<div class="col8 gutter">
 				<ul>
 					<li><a href="#">CAS Progression Pathways</a></li>
 					<li><a href="#">Baseline testing</a> run by TLM</li>
@@ -265,10 +287,8 @@
 					<li><a href="#">Isaac Physics</a>. A very good online platform; curated questions.
 					<li><a href="#">Cambridge Underground Mathematics. Mainly A level.</a>
 				</ul>
-				
 			</div>
 		</div>
-		
 		
 	</div>
 </section>
